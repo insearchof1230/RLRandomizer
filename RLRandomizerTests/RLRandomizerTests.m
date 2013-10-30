@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "RLRandomizer.h"
 
 @interface RLRandomizerTests : XCTestCase
 
@@ -16,19 +17,23 @@
 
 - (void)setUp
 {
-    [super setUp];
+    //[super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown
 {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+    //[super tearDown];
 }
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+
+    RLRandomizer *randomizer = [[RLRandomizer alloc]init];
+    
+    NSLog(@"%@",[randomizer genRandStringLength:25 type:3]);
+    
 }
 
 @end

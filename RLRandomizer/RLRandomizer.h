@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface RLRandomizer : NSObject
+-(NSString *)genRandStringLength:(int)len type:(int)stage;
 
 @end
