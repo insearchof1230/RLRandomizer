@@ -15,6 +15,7 @@
 		D77D47581820743400A5D178 /* RLRandomizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77D473B1820743300A5D178 /* RLRandomizer.framework */; };
 		D77D475E1820743400A5D178 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D77D475C1820743400A5D178 /* InfoPlist.strings */; };
 		D77D47601820743400A5D178 /* RLRandomizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D77D475F1820743400A5D178 /* RLRandomizerTests.m */; };
+		D77D476A1820885A00A5D178 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D77D47691820885A00A5D178 /* README.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		D77D475B1820743400A5D178 /* RLRandomizerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RLRandomizerTests-Info.plist"; sourceTree = "<group>"; };
 		D77D475D1820743400A5D178 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D77D475F1820743400A5D178 /* RLRandomizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLRandomizerTests.m; sourceTree = "<group>"; };
+		D77D47691820885A00A5D178 /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				D77D474B1820743400A5D178 /* RLRandomizer.h */,
 				D77D474C1820743400A5D178 /* RLRandomizer.m */,
+				D77D47691820885A00A5D178 /* README.rtf */,
 				D77D47451820743400A5D178 /* Supporting Files */,
 			);
 			path = RLRandomizer;
@@ -230,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77D476A1820885A00A5D178 /* README.rtf in Resources */,
 				D77D47491820743400A5D178 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +452,7 @@
 				D77D47651820743400A5D178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D77D47661820743400A5D178 /* Build configuration list for PBXNativeTarget "RLRandomizerTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +461,7 @@
 				D77D47681820743400A5D178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

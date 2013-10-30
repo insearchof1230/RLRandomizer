@@ -16,11 +16,12 @@ NSString *stage4 = @"ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 NSString *stage5 = @"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 NSString *stage6 = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 NSString *stage7 = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%^&*_-+=<>?~";
+NSString *stage8 = @"0123456789";
 NSString *stageNum;
 
--(NSString *)genRandStringLength:(int)len type:(int)stage
+-(NSString *)generateRandomString:(int)length type:(int)stage
 {
-    NSMutableString *randomString = [NSMutableString stringWithCapacity:len];
+    NSMutableString *randomString = [NSMutableString stringWithCapacity:length];
 
     switch (stage) {
         case 1:
@@ -44,12 +45,15 @@ NSString *stageNum;
         case 7:
             stageNum = [stage7 copy];
             break;
+        case 8:
+            stageNum = [stage8 copy];
+            break;
         default:
             break;
     }
     
     
-    for (int i=0; i<len; i++) {
+    for (int i=0; i<length; i++) {
         [randomString appendFormat: @"%C", [stageNum characterAtIndex: arc4random() % [stageNum length]]];
     }
     

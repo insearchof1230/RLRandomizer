@@ -32,7 +32,7 @@
 
     RLRandomizer *randomizer = [[RLRandomizer alloc]init];
     
-    NSLog(@"%@",[randomizer genRandStringLength:25 type:3]);
+    NSLog(@"Random String:%@",[randomizer generateRandomString:25 type:2]);
     
 }
 

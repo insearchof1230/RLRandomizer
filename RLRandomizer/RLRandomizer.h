@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface RLRandomizer : NSObject
--(NSString *)genRandStringLength:(int)len type:(int)stage;
+-(NSString *)generateRandomString:(int)length type:(int)stage;
 
 @end
